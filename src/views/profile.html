@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Page</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="navbar-brand" id="nav-brand"></div>
+      <div class="navbar-nav" id="nav-item-container">
+        <!-- navbar items are inserted here -->
+      </div>
+      <div class="navbar-search" id="nav-search-container">
+          <!-- new search input inserted here-->
+      </div>
+    </nav>
+    <div class="ui grid container">
+    <div class="row">
+      <div class="ui fluid card">
+        <div class="content">
+          <a class="header" id=>David Li</a>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="four wide column">
+            <div class="ui vertical fluid menu">
+                <div class="item">
+                    <div class="ui icon input">
+                      <input type="text" placeholder="Search in your classes...">
+                      <i class="search icon"></i>
+                    </div>
+                    <div id="courses">
+                      <!--insert classes here-->
+                      <a class="active blue item">
+                        8.01
+                      <div class="ui blue left pointing label">1</div>
+                      </a>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class ="ui container">
+        <div class="six wide column">
+            <div class="ui raised very padded text container segment">
+                <div class="ui fluid icon input">
+                  <input type="text" placeholder="Search in your saved posts...">
+                  <i class="search icon"></i>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="ui four cards">
+                      <div id= "saved-posts">
+                      <!--saved posts-->
+                      <div class="ui card">
+                          <div class="content">
+                            <i class="right floated like icon"></i>
+                            <i class="right floated bookmark outline icon"></i>
+                            <div class="header">Forest Yang</div>
+                            <div class="description">
+                              <p>Help what are gyroscopes</p>
+                            </div>
+                          </div>
+                          <div class="extra content">
+                            <span class="left floated like">
+                              <i class="like icon"></i>
+                              Like
+                            </span>
+                            <span class="right floated bookmark outline">
+                              <i class="bookmark outline icon"></i>
+                              Save
+                            </span>
+                          </div>
+                      </div> 
+                    </div>      
+                </div> 
+              </div>
+        </div>
+      </div>
+      <div class="two wide column">
+        Hello
+      </div>
+      </div>
+    </div>
+  </div>  
+  </body>
+
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/navbar.js"></script>
+  <script src="/static/js/feed.js"></script>
+  <script src="/static/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+</html>
